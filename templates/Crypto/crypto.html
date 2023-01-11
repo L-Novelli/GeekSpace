@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    
+{% endblock %}
+    
+{% block content %}
+    <h1>CRYPTO</h1>    
+        <form class="form-inline my-2 my-lg-0" action="/crypto" method="GET">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+        {% for cryptos in Crypto %}
+            <tr>
+                <h3>Crypto: {{cryptos.name}} </h3>
+                <td>Description: {{cryptos.description}} </td><br>
+                <a href="update/{{cryptos.id}}" class="btn btn-primary">Update</a>
+                <a href="delete/{{cryptos.id}}/" class="btn btn-danger">Delete</a><br>
+        {% endfor %}
+
+    <br><h4>Add Post </h4> <a href="add-post" class="btn btn-primary">ADD</a>
+{% endblock %}

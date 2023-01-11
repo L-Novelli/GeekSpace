@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    
+{% endblock %}
+    
+{% block content %}
+    <h1>GAMING</h1>    
+        <form class="form-inline my-2 my-lg-0" action="/gaming" method="GET">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    
+        {% for games in Gaming %} 
+        <tr>
+            <br><h3>Game: {{games.name}} </h3>
+            <td>Description: {{games.description}} </td><br>
+            <a href="update/{{games.id}}" class="btn btn-primary">Update</a>
+            <a href="delete/{{games.id}}/" class="btn btn-danger">Delete</a><br>
+        </tr>
+        {% endfor %}
+        
+
+
+
+    <br><h4>Add Post </h4> <a href="add-post" class="btn btn-primary">ADD</a>
+{% endblock %}
