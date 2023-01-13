@@ -17,9 +17,9 @@
 
 ### BackEnd
 #### | [LinkedIn | Lautaro Novelli](https://www.linkedin.com/in/l-novelli/) | 
-#### | [GitHub | Lautaro Novelli](https://github.com/L-Novelli/)
+#### | [GitHub | Lautaro Novelli](https://github.com/L-Novelli/) |
 
 
 ## Tutor:
 #### | [LinkedIn | Emanuel Tevez](https://www.linkedin.com/in/emanuel-juli%C3%A1n-tevez/) | 
-#### | [GitHub | Emanuel Tevez](https://github.com/ematevez/)
+#### | [GitHub | Emanuel Tevez](https://github.com/ematevez/) |
