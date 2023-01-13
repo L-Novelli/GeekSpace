@@ -2,9 +2,11 @@ from django.contrib import admin
 from django.urls import path
 from .views import index
 from django.contrib.auth.views import LogoutView
+from django.conf import settings
+from django.conf.urls.static import static
 
 from Categories.views import AddGPost, AddCPost, AddCodingPost, AddAPost, GamesList, CryptoList, C_List, AnimeList, GameUpdate, CryptoUpdate, CodeUpdate, AnimeUpdate, GameDeleteView, CodingDeleteView, CryptoDeleteView, AnimeDeleteView
-from users.views import login_view, signup
+from users.views import login_view, signup, profile
 
 urlpatterns = [
     path('', index, name='index'),
@@ -33,6 +35,9 @@ urlpatterns = [
     path('login/', login_view, name='login'),
     path('logout/', LogoutView.as_view(template_name = 'User/logout.html')),
     path('signup/', signup),
+    path('profile/', profile, name='users-profile'),
 
 
 ]
+
+urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

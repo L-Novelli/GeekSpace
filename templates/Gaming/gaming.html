@@ -14,7 +14,8 @@
         {% for games in Gaming %} 
         <tr>
             <br><h3>Game: {{games.name}} </h3>
-            <td>Description: {{games.description}} </td><br>
+            <h4>Description: {{games.description}} </h4>
+            <td>Wrote by {{request.user}} </td><br>
             <a href="update/{{games.id}}" class="btn btn-primary">Update</a>
             <a href="delete/{{games.id}}/" class="btn btn-danger">Delete</a><br>
         </tr>

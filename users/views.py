@@ -51,3 +51,6 @@ def signup(request):
         }
         
         return render(request, 'User/signup.html', context = context)
+    
+def profile(request):
+    return render(request, 'User/profile.html')
