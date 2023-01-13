@@ -1,7 +1,7 @@
 # **GEEK SPACE**
 ## Comentario.
 
-##Proyecto Final CoderHouse || Python
+## Proyecto Final CoderHouse || Python
 - Geek Space es un blog en el cual sus usuarios pueden compartir sus opiniones acerca de sus intereses dentro de los sectores del blog.
 
 <br>  
