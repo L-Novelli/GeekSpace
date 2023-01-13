@@ -196,7 +196,7 @@ def CryptoUpdate(request, pk):
             )
         }
 
-        return render(request, 'Gaming/update.html', context=context)
+        return render(request, 'Crypto/update.html', context=context)
 
     elif request.method == 'POST':
         form = Cryptos(request.POST)
@@ -228,7 +228,7 @@ def CodeUpdate(request, pk):
             )
         }
 
-        return render(request, 'Gaming/update.html', context=context)
+        return render(request, 'Code/update.html', context=context)
 
     elif request.method == 'POST':
         form = Cryptos(request.POST)
@@ -260,7 +260,7 @@ def AnimeUpdate(request, pk):
             )
         }
 
-        return render(request, 'Gaming/update.html', context=context)
+        return render(request, 'Anime/update.html', context=context)
 
     elif request.method == 'POST':
         form = Cryptos(request.POST)
@@ -283,19 +283,19 @@ def AnimeUpdate(request, pk):
 class GameDeleteView(DeleteView):
     model = Gaming
     template_name = 'Gaming/delete.html'
-    success_url = 'Gaming/gaming.html'
+    success_url = '/gaming'
     
 class CryptoDeleteView(DeleteView):
     model = Crypto
     template_name = 'Crypto/delete.html'
-    success_url = 'Crypto/crypto.html'
+    success_url = '/crypto'
     
 class CodingDeleteView(DeleteView):
     model = Coding
     template_name = 'Code/delete.html'
-    success_url = 'Code/code.html'
+    success_url = '/coding'
     
 class AnimeDeleteView(DeleteView):
     model = Anime
     template_name = 'Anime/delete.html'
-    success_url = 'Anime/anime.html'
+    success_url = '/anime'
