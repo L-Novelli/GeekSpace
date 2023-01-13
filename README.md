@@ -1,7 +1,7 @@
 # **GEEK SPACE**
 ## Comentario.
 
-##Descripción del proyecto
+##Proyecto Final CoderHouse || Python
 - Geek Space es un blog en el cual sus usuarios pueden compartir sus opiniones acerca de sus intereses dentro de los sectores del blog.
 
 <br>  
@@ -16,6 +16,10 @@
 ## Desarrolladores del proyecto:
 
 ### BackEnd
-#### | [LinkedIn | Lautaro Novelli](https://www.linkedin.com/in/l-novelli//) | 
-#### | [GitHub | Lautaro Novelli](https://github.com/L-Novelli//) | 
+#### | [LinkedIn | Lautaro Novelli](https://www.linkedin.com/in/l-novelli/) | 
+#### | [GitHub | Lautaro Novelli](https://github.com/L-Novelli/)
 
+
+## Tutor:
+#### | [LinkedIn | Emanuel Tevez](https://www.linkedin.com/in/emanuel-juli%C3%A1n-tevez/) | 
+#### | [GitHub | Emanuel Tevez](https://github.com/ematevez/)
