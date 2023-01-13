@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
-from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth import login, authenticate
 
-def login(request):
+def login_view(request):
     if request.method == 'GET':
         form = AuthenticationForm()
         context = {
@@ -23,7 +23,7 @@ def login(request):
                 context = {
                     'message': f'Welcome, {username}'
                 }
-                return render(request, 'User/login.html', context = context)
+                return render(request, 'index.html', context = context)
         form = AuthenticationForm()
         context = {
             'form': form,
