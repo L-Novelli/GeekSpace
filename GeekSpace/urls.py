@@ -1,9 +1,10 @@
 from django.contrib import admin
 from django.urls import path
 from .views import index
+from django.contrib.auth.views import LogoutView
 
 from Categories.views import AddGPost, AddCPost, AddCodingPost, AddAPost, GamesList, CryptoList, C_List, AnimeList, GameUpdate, CryptoUpdate, CodeUpdate, AnimeUpdate, GameDeleteView, CodingDeleteView, CryptoDeleteView, AnimeDeleteView
-
+from users.views import login, signup
 
 urlpatterns = [
     path('', index, name='index'),
@@ -28,4 +29,10 @@ urlpatterns = [
     path('anime/add-post', AddAPost, name='addAPost'),
     path('anime/update/<int:pk>/', AnimeUpdate, name='AnimeUpdate'),
     path('anime/delete/<int:pk>/', AnimeDeleteView.as_view(), name='AnimeDelete'),
+    
+    path('login/', login, name='login'),
+    path('logout/', LogoutView.as_view(template_name = 'users/logout.html')),
+    path('signup/', signup),
+
+
 ]
