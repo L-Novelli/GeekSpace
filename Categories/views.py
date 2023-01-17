@@ -18,6 +18,7 @@ def AddGPost(request):
             Gaming.objects.create(
                 name=form.cleaned_data['name'],
                 description=form.cleaned_data['description'],
+                user = form.cleaned_data['user']
             )
             context = {
                 'message': 'added successfully'
@@ -44,6 +45,7 @@ def AddCPost(request):
             Crypto.objects.create(
                 name=form.cleaned_data['name'],
                 description=form.cleaned_data['description'],
+                user = form.cleaned_data['user']
             )
             context = {
                 'message': 'added successfully'
@@ -70,6 +72,7 @@ def AddCodingPost(request):
             Coding.objects.create(
                 name=form.cleaned_data['name'],
                 description=form.cleaned_data['description'],
+                user = form.cleaned_data['user']
             )
             context = {
                 'message': 'added successfully'
@@ -96,6 +99,7 @@ def AddAPost(request):
             Anime.objects.create(
                 name=form.cleaned_data['name'],
                 description=form.cleaned_data['description'],
+                user = form.cleaned_data['user']
             )
             context = {
                 'message': 'added successfully'

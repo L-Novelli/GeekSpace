@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    
+    暗号
 {% endblock %}
     
 {% block content %}
@@ -14,7 +14,8 @@
         {% for cryptos in Crypto %}
             <tr>
                 <h3>Crypto: {{cryptos.name}} </h3>
-                <td>Description: {{cryptos.description}} </td><br>
+                <td>Description: {{cryptos.description}} </td>
+                <td>Wrote by {{cryptos.user}} </td><br>
                 <a href="update/{{cryptos.id}}" class="btn btn-primary">Update</a>
                 <a href="delete/{{cryptos.id}}/" class="btn btn-danger">Delete</a><br>
         {% endfor %}

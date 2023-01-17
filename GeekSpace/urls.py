@@ -33,11 +33,9 @@ urlpatterns = [
     path('anime/delete/<int:pk>/', AnimeDeleteView.as_view(), name='AnimeDelete'),
     
     path('login/', login_view, name='login'),
-    path('logout/', LogoutView.as_view(template_name = 'User/logout.html')),
+    path('logout/', LogoutView.as_view(template_name = 'index.html')),
     path('signup/', signup),
-    path('profile/', profile, name='users-profile'),
+    path('profile/', profile, name='profile'),
 
 
-]
-
-urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

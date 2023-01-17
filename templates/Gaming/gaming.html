@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    
+    ゲーム
 {% endblock %}
     
 {% block content %}
@@ -15,7 +15,7 @@
         <tr>
             <br><h3>Game: {{games.name}} </h3>
             <h4>Description: {{games.description}} </h4>
-            <td>Wrote by {{request.user}} </td><br>
+            <td>Wrote by {{games.user}} </td><br>
             <a href="update/{{games.id}}" class="btn btn-primary">Update</a>
             <a href="delete/{{games.id}}/" class="btn btn-danger">Delete</a><br>
         </tr>

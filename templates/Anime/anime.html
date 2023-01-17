@@ -3,7 +3,7 @@
 {% block title %}
     
 {% endblock %}
-    
+    アニメ
 {% block content %}
     <h1>ANIME</h1>    
         <form class="form-inline my-2 my-lg-0" action="/anime" method="GET">
@@ -13,8 +13,9 @@
 
         {% for animes in Anime %}
         <tr>
-            <h3>Anime: {{animes.name}} </h3>
-            <td>Description: {{animes.description}} </td><br>
+            h3>Anime: {{animes.name}} </h3>
+            <td>Description: {{animes.description}} </td>
+            <td>Wrote by {{animes.user}} </td><br>
             <a href="update/{{animes.id}}" class="btn btn-primary">Update</a>
             <a href="delete/{{animes.id}}/" class="btn btn-danger">Delete</a><br>
 

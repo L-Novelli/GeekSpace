@@ -1,20 +1,37 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Index
+Home
 {% endblock %}
 
 {% block content %}
-    
-    <h1>Welcome to Geek Space!</h1>
-
-    {{request.user}}
-
-    {% if form %}
-
-        <h2>{{message}}</h2>
-    
-    {% endif %}
+    {% for games in Gaming %} 
+    <tr>
+        <br><h3>Game: {{games.name}} </h3>
+        <h4>Description: {{games.description}} </h4>
+        <td>Wrote by {{games.user}} </td><br>
+    {% endfor %}
+    <br>
+    {% for coding in Coding %}
+        <tr>
+            <h3>Code: {{coding.name}} </h3>
+            <td>Description: {{coding.description}} </td>
+            <td>Wrote by {{coding.user}} </td><br>
+    {% endfor %}
+    <br>
+    {% for cryptos in Crypto %}
+        <tr>
+            <h3>Crypto: {{cryptos.name}} </h3>
+            <td>Description: {{cryptos.description}} </td>
+            <td>Wrote by {{cryptos.user}} </td><br>
+    {% endfor %}
+    <br>
+    {% for animes in Anime %}
+        <tr>
+            <h3>Anime: {{animes.name}} </h3>
+            <td>Description: {{animes.description}} </td>
+            <td>Wrote by {{animes.user}} </td><br>
+    {% endfor %}
 
     
 {% endblock %}

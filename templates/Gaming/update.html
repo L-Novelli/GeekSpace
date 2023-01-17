@@ -5,23 +5,22 @@
 
 {% block content %}
     <h1>UPDATE</h1>
+ 
+
+        {% if form %}
+
+            <form action="" method="POST">
+
+                {% csrf_token %}
+
+                <table>
+                    {{form.as_table}}
+                </table>
 
 
-
-    {% if form %}
-
-        <form action="" method="POST">
-
-            {% csrf_token %}
-
-            <table>
-                {{form.as_table}}
-            </table>
-
-
-            <input type="submit" value="Update">
-        </form>
-    {% endif %}
+                <input type="submit" value="Update">
+            </form>
+        {% endif %}
 
 
     {% if form_errors %}
