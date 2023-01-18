@@ -8,7 +8,7 @@
 ### Cómo ejecutar el proyecto
 - Instalar Python
 - Clonar el proyecto con ``` git clone git@github.com:L-Novelli/GeekSpace```
-- Crear entorno virtual con `Pipenv` or `virtualenv` and activate it.
+- Crear entorno virtual con `Pipenv` o `virtualenv` y activarlo.
 - Instalar los requerimientos
 <!--esto es para escribir codigo el que quieran -->
 ```sh
