@@ -12,12 +12,16 @@
         </form>
 
         {% for cryptos in Crypto %}
-            <tr>
-                <h3>Crypto: {{cryptos.name}} </h3>
-                <td>Description: {{cryptos.description}} </td>
-                <td>Wrote by {{cryptos.user}} </td><br>
+        <div class="card" style="width: 18rem;">
+            <img src="https://i0.wp.com/www.titanui.com/wp-content/uploads/2014/02/07/Bitcoin-Logo-Vector.png" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">{{cryptos.name}} </h3>
+                <td class="card-text">{{cryptos.description}} </td>
+                <td>{{cryptos.user}} </td><br>
                 <a href="update/{{cryptos.id}}" class="btn btn-primary">Update</a>
                 <a href="delete/{{cryptos.id}}/" class="btn btn-danger">Delete</a><br>
+            </div>
+        </div>
         {% endfor %}
 
     <br><h4>Add Post </h4> <a href="add-post" class="btn btn-primary">ADD</a>

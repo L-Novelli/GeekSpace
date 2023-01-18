@@ -3,7 +3,7 @@
 {% block title %}
     
 {% endblock %}
-    アニメ
+アニメ
 {% block content %}
     <h1>ANIME</h1>    
         <form class="form-inline my-2 my-lg-0" action="/anime" method="GET">
@@ -12,12 +12,18 @@
         </form>
 
         {% for animes in Anime %}
-        <tr>
-            h3>Anime: {{animes.name}} </h3>
-            <td>Description: {{animes.description}} </td>
-            <td>Wrote by {{animes.user}} </td><br>
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn.dribbble.com/users/2761/screenshots/12219340/media/8eda375c04c71bbeca14c4c71f0fe876.png?compress=1&resize=400x300&vertical=top" class="card-img-top">
+            <div class="card-body">
+            <h3 class="card-title">{{animes.name}} </h3>
+            <td class="card-text">{{animes.description}} </td>
+            <td>{{animes.user}} </td><br>
             <a href="update/{{animes.id}}" class="btn btn-primary">Update</a>
-            <a href="delete/{{animes.id}}/" class="btn btn-danger">Delete</a><br>
+            <a href="delete/{{animes.id}}/" class="btn btn-danger">Delete</a>
+        </div>
+        
+    </div>
 
     {% endfor %}
 

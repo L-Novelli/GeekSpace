@@ -12,13 +12,19 @@
         </form>
     
         {% for games in Gaming %} 
-        <tr>
-            <br><h3>Game: {{games.name}} </h3>
-            <h4>Description: {{games.description}} </h4>
-            <td>Wrote by {{games.user}} </td><br>
-            <a href="update/{{games.id}}" class="btn btn-primary">Update</a>
-            <a href="delete/{{games.id}}/" class="btn btn-danger">Delete</a><br>
-        </tr>
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn.dribbble.com/users/1672258/screenshots/14662345/media/30023c4b42c7199e18c0327d956a0e7f.png?compress=1&resize=400x300" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">{{games.name}}</h3> 
+                <h4 class="card-text">{{games.description}} </h4>
+                <td> {{games.user}} </td><br>
+                <a href="update/{{games.id}}" class="btn btn-primary">Update</a>
+                <a href="delete/{{games.id}}/" class="btn btn-danger">Delete</a>
+            </div>
+        
+        </div>
+            
+        
         {% endfor %}
         
 

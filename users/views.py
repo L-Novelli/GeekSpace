@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth import login, authenticate
+from users.forms import UserProfileForm
 
 def login_view(request):
     if request.method == 'GET':
@@ -54,6 +55,29 @@ def signup(request):
     
 def profile(request):
     context = {
-        'user': request.user
+        'user': request.user,
     }
     return render(request, 'User/profile.html', context = context)
+
+def pfp(request):
+    user = request.user
+    if request.method == 'GET':
+        form = UserProfileForm(initial={
+            'pfp': request.user.profile.pfp
+        })
+        context ={
+            'form': form
+        }
+        return render(request, 'User/edit.html', context = context)
+    elif request.method == 'POST':
+        form = UserProfileForm(request.POST, request.FILES)
+        if form.is_valid():
+            user.profile.pfp = form.cleaned_data.get('pfp')
+            user.profile.save()
+            return redirect('profile')
+        
+        context = {
+            'errors':form.errors,
+            'form':UserProfileForm()
+        }
+        return render(request, 'users/edit.html', context=context)

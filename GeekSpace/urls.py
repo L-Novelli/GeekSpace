@@ -6,7 +6,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from Categories.views import AddGPost, AddCPost, AddCodingPost, AddAPost, GamesList, CryptoList, C_List, AnimeList, GameUpdate, CryptoUpdate, CodeUpdate, AnimeUpdate, GameDeleteView, CodingDeleteView, CryptoDeleteView, AnimeDeleteView
-from users.views import login_view, signup, profile
+from users.views import login_view, signup, profile, pfp
 
 urlpatterns = [
     path('', index, name='index'),
@@ -36,6 +36,8 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(template_name = 'index.html')),
     path('signup/', signup),
     path('profile/', profile, name='profile'),
+    path('profile/update/', pfp)
+
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
