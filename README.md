@@ -3,6 +3,26 @@
 
 ## **GEEK SPACE**
   - Geek Space es un blog en el cual sus usuarios pueden compartir sus opiniones acerca de sus intereses dentro de los sectores del blog.
+  
+## *Instalación de proyecto* - Back-End
+### Cómo ejecutar el proyecto
+- Instalar Python
+- Clonar el proyecto con ``` git clone git@github.com:ematevez/proyecto.git```
+- Crear entorno virtual con `Pipenv` or `virtualenv` and activate it.
+- Instalar los requerimientos
+<!--esto es para escribir codigo el que quieran -->
+```sh
+    pip install -r requirements.txt
+```
+- Ejecutar las migraciones
+```sh
+    $python manage.py makemigrations
+    $python manage.py runserver
+```
+- Ejecutar el proyecto
+```sh
+    python manage.py runserver
+```
 
 
 <br>  
