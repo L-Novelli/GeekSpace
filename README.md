@@ -1,4 +1,4 @@
-🇦🇷
+#🇦🇷
 # Proyecto Final CoderHouse || Python
 
 ## **GEEK SPACE**
@@ -24,7 +24,7 @@
     python manage.py runserver
 ```
 
-🇺🇸
+#🇺🇸
 # CoderHouse Final Project || Python
 
 ## **GEEK SPACE**
