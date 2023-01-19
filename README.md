@@ -1,4 +1,4 @@
-
+🇦🇷
 # Proyecto Final CoderHouse || Python
 
 ## **GEEK SPACE**
@@ -24,6 +24,31 @@
     python manage.py runserver
 ```
 
+🇺🇸
+# CoderHouse Final Project || Python
+
+## **GEEK SPACE**
+  - Geek Space is a blog where people can register and post comments, opinions, Tips & Tricks, recomendations, etc about their favourite game, anime, crypto and programming.
+  
+## *Project Instalation* - Back-End
+### How to execute:
+- Install Python
+- Clone project  ``` git clone git@github.com:L-Novelli/GeekSpace```
+- Create a Virtual Enviroment `Pipenv` o `virtualenv` and activate it.
+- Install ```requirements.txt```
+```sh
+    pip install -r requirements.txt
+```
+- Execute migrations
+```sh
+    $python manage.py makemigrations
+    $python manage.py runserver
+```
+- Run project
+```sh
+    python manage.py runserver
+```
+
 
 <br>  
 
@@ -35,9 +60,9 @@
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="html" width="45" height="45"/>
 
 
-## Desarrolladores del proyecto:
+## Devs:
 
-### BackEnd
+### BackEnd | FrontEnd
 #### | [LinkedIn | Lautaro Novelli](https://www.linkedin.com/in/l-novelli/) | 
 #### | [GitHub | Lautaro Novelli](https://github.com/L-Novelli/) |
 
