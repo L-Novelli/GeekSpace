@@ -46,7 +46,7 @@ def signup(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             user  = form.save()
-            Profile.objects.create(user = user, pfp = '/profile_images/default69.jpg')
+            Profile.objects.create(user = user, pfp = False)
             return redirect('login')
         
         context = {      
@@ -67,7 +67,7 @@ def pfp(request):
     user = request.user
     if request.method == 'GET':
         form = UserProfileForm(initial={
-            'pfp': request.user.profile.pfp
+            'pfp': user.profile.pfp
         })
         context ={
             'form': form

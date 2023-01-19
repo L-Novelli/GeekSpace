@@ -5,4 +5,4 @@ class UserProfileForm(forms.ModelForm):
     
     class Meta:
         model = Profile
-        fields = ['user', 'pfp']
+        fields = ['pfp']
