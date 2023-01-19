@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from .views import index
+from .views import index, about
 from django.contrib.auth.views import LogoutView
 from django.conf import settings
 from django.conf.urls.static import static
@@ -11,6 +11,8 @@ from users.views import login_view, signup, profile, pfp
 urlpatterns = [
     path('', index, name='index'),
     path('admin/', admin.site.urls),
+    path('about', about),
+
     
     path('gaming/', GamesList, name='GamesList'),
     path('gaming/add-post',AddGPost, name='AddGPost'),
