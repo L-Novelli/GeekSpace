@@ -52,7 +52,7 @@
 
 <br>  
 
-<h2> 🚀 &nbsp;Tecnologías utilizadas</h2>
+<h2> 🚀 &nbsp;Tech Stack</h2>
 <p align="left">
 <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" alt="python" width="45" height="45"/>
 <img src="https://github.com/devicons/devicon/blob/master/icons/django/django-plain-wordmark.svg" alt="django" width="45" height="45"/>
