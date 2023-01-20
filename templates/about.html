@@ -5,34 +5,105 @@ About Us
 {% endblock %}
 
 {% block content %}
-    
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <div class="about-section">
-        <div class="inner-container">
-            <h1>Geek Space!</h1>
-            <p class="text">
-                We are a blog, with the objective of making a friendly and sharing community about our website topics. Here you can share your experience, 
-                find topics of your interest, search for help in posts made by our users and find reviews and about gaming, programming, crypto and anime.
-                With more to come in the near future.
 
-                We are Geek Space, made by Geeks for Geeks
-            </p>
-            <div class="skills">
-                <span>Gaming</span>
-                <span>Anime</span>
-                <span>Coding</span>
-                <span>Crypto</span>
-            </div>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                }
+
+                html {
+                box-sizing: border-box;
+                }
+
+                *, *:before, *:after {
+                box-sizing: inherit;
+                }
+
+                .column {
+                float: center;
+                width: 33.3%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+                }
+
+                .card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                margin: 8px;
+                float: none;
+                }
+
+                .about-section {
+                padding: 50px;
+                text-align: center;
+                background-color: #474e5d;
+                color: white;
+                }
+
+                .container {
+                padding: 0 16px;
+                }
+
+                .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+                }
+
+                .title {
+                color: grey;
+                }
+
+                .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                }
+
+                .button:hover {
+                background-color: #555;
+                }
+
+                @media screen and (max-width: 400px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }
+                }
+            </style>
+    </head>
+<body>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+        <img src="https://media.licdn.com/dms/image/D4D03AQGn2-4nwwD1yA/profile-displayphoto-shrink_800_800/0/1668528187175?e=1679529600&v=beta&t=H1oZP7tgNXrDWXnewsKEewqZm9mkxb9uub_TrdljMPQ"style="width:100%">
+        <div class="container">
+            <h2>Lautaro E. Novelli</h2>
+            <p class="title">Founder, Designer, BackEnd and FrontEnd</p>
+            <p>BackEnd and FrontEnd at GeekSpace</p>
+            <a class="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/l-novelli/" role="button">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/L-Novelli" role="button">
+                <i class="bi bi-github"></i>
+            </a>
         </div>
     </div>
-</body>
-</html>
-    
-{% endblock %}
+</div>
+{% endblock %} 
+      

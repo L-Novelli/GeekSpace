@@ -20,8 +20,10 @@
             <h3 class="card-title">{{coding.name}} </h3>
             <h4 class="card-text">{{coding.description}} </h4>
             <td>{{coding.user}} </td><br>
+            {% if user.is_superuser %}
             <a href="update/{{coding.id}}" class="btn btn-primary">Update</a>
             <a href="delete/{{coding.id}}/" class="btn btn-danger">Delete</a><br>
+            {% endif %}
         </div>
         
     </div>

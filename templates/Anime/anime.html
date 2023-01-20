@@ -19,9 +19,10 @@
                 <h3 class="card-title">{{animes.name}} </h3>
                 <h4 class="card-text">{{animes.description}} </h4>
                 <td>{{animes.user}} </td><br>
-            
+                {% if user.is_superuser %}
             <a href="update/{{animes.id}}" class="btn btn-primary">Update</a>
             <a href="delete/{{animes.id}}/" class="btn btn-danger">Delete</a>
+            {% endif %}
         </div>
         
     </div>

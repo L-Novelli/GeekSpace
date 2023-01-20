@@ -18,8 +18,10 @@
                 <h3 class="card-title">{{cryptos.name}} </h3>
                 <h4 class="card-text">{{cryptos.description}} </h4>
                 <td>{{cryptos.user}} </td><br>
+                {% if user.is_superuser %}
                 <a href="update/{{cryptos.id}}" class="btn btn-primary">Update</a>
                 <a href="delete/{{cryptos.id}}/" class="btn btn-danger">Delete</a><br>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
