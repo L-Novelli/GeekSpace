@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth import login, authenticate
 from .models import Profile
-from .forms import UserProfileForm
+from .forms import UserProfileForm, RegisterForm
 from django.contrib.auth.decorators import login_required
 
 def login_view(request):
@@ -36,14 +36,14 @@ def login_view(request):
 
 def signup(request):
     if request.method == 'GET':
-        form = UserCreationForm()
+        form = RegisterForm()
         context = {
             'form': form,
         }
         return render(request, 'User/signup.html', context = context)
     
     elif request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = RegisterForm(request.POST)
         if form.is_valid():
             user  = form.save()
             Profile.objects.create(user = user, pfp = False)
@@ -51,7 +51,7 @@ def signup(request):
         
         context = {      
             'errors': form.errors,
-            'form': UserCreationForm()          
+            'form': RegisterForm()          
         }
         
         return render(request, 'User/signup.html', context = context)
