@@ -84,4 +84,4 @@ def pfp(request):
             'errors':form.errors,
             'form':UserProfileForm()
         }
-        return render(request, 'users/edit.html', context=context)
+        return render(request, 'User/edit.html', context=context)
