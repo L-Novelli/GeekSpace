@@ -9,7 +9,7 @@
 ## *Instalación de proyecto* - Back-End
 ### Cómo ejecutar el proyecto
 - Instalar Python
-- Clonar el proyecto con ``` git clone git@github.com:L-Novelli/GeekSpace.git```
+- Clonar el proyecto con ``` git clone https://github.com/L-Novelli/GeekSpace```
 - Crear entorno virtual con `Pipenv` o `virtualenv` y activarlo.
 - Instalar los requerimientos
 <!--esto es para escribir codigo el que quieran -->
@@ -37,7 +37,7 @@
 ## *Project Instalation* - Back-End
 ### How to execute:
 - Install Python
-- Clone project  ``` git clone git@github.com:L-Novelli/GeekSpace.git```
+- Clone project  ``` git clone https://github.com/L-Novelli/GeekSpace```
 - Create a Virtual Enviroment `Pipenv` o `virtualenv` and activate it.
 - Install ```requirements.txt```
 ```sh
