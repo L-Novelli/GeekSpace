@@ -5,6 +5,7 @@
   - Geek Space es un blog en el cual sus usuarios pueden compartir sus opiniones acerca de sus intereses dentro de los sectores del blog.
   - Demo:
     [YouTube](https://youtu.be/SzYLvnCMAU0)
+  - Deploy: [Geek Space](softwareslayer.pythonanywhere.com)
   
 ## *Instalación de proyecto* - Back-End
 ### Cómo ejecutar el proyecto
@@ -33,6 +34,7 @@
   - Geek Space is a blog where people can register and post comments, opinions, Tips & Tricks, recomendations, etc about their favourite game, anime, crypto and programming.
   - Demo:
     [YouTube](https://youtu.be/SzYLvnCMAU0)
+  - Deploy: [Geek Space](softwareslayer.pythonanywhere.com)
   
 ## *Project Instalation* - Back-End
 ### How to execute:
